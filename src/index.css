@@ -19,7 +19,7 @@ body,
 
 @layer components {
   .text-hero {
-    @apply text-6xl text-gray-900 font-semibold font-mouse leading-none;
+    @apply text-6xl text-gray-900 font-semibold font-mouse;
   }
 
   .text-leading {
@@ -37,4 +37,16 @@ body,
   .text-subtitle {
     @apply text-4xl font-mouse text-gray-900 font-semibold;
   }
+
+  .with-max-width {
+    @apply max-w-5xl m-auto flex flex-1;
+  }
+
+  .nav-link {
+    @apply font-semibold text-black text-xs border-b-2 border-transparent hover:border-yellow-400 transition;
+  }
+}
+
+.hero-height {
+  height: calc(100vh - theme("spacing.10") - theme("spacing.16"));
 }
